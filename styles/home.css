@@ -1,0 +1,40 @@
+#skills-container {
+    margin: 0 auto;
+    color: #b7b7b7;
+    text-align: center;
+
+}
+#skills-container h2 {
+    display: inline;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: normal;
+    color: #eee;
+}
+#bio-fullname {
+    color: #15ffab;
+    font-weight: normal;
+    margin: 1rem 0 1rem 0;
+    text-align: center;
+    font-size: 2.3rem;
+}
+@media only screen and (min-width: 720px) {
+    main {
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+    }
+    #description {
+        margin-right: 5rem;
+        margin-bottom: 5rem;
+        font-weight: 300;
+        font-size: 2, 6;
+    }
+    #skills-container {
+        display: flex;
+        width: auto;
+    }
+    #skills-container h2 {
+        font-size: 18px;
+    }
+}

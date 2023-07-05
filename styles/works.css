@@ -1,0 +1,117 @@
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.projects-container {
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    grid-column-gap: 8px;
+    grid-row-gap: 14px;
+    width: 300px;
+    margin: 0 auto;
+}
+.projects {
+    border-radius: 2rem;
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+    overflow: hidden;
+    font-size: 10px;
+    height: 183px;
+    width: 145px;
+    margin: 0 auto;
+}
+.projects-img {
+    width: 100%;
+    height: 104px;
+    object-fit: cover;
+    background-color: #fff;
+}
+.projects-title {
+    font-size: 10px;
+    width: 132px;
+    font-weight: 600;
+    margin: 5px auto;
+}
+.projects-desc {
+    width: 118px;
+    font-size: 8px;
+    margin: 0 auto;
+}
+.more {
+    display: block;
+        border-radius: 2rem;
+        height: 183px;
+        width: 145px;
+        background-color: #C4C4C4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+}
+.more span {
+    display: block;
+    height: 18px;
+    width: 18px;
+    background-color: #AFAFAF;
+    border-radius: 100%;
+    margin: 0 2px;
+}
+@media only screen and (min-width: 720px) {
+    .projects-container {
+       display: flex;
+       width: auto;
+       justify-content: center;
+       align-items: center;
+       margin: auto;
+    }
+    .projects {
+        width: 15rem;
+        height: 300px;
+        margin-bottom: 1rem;
+    }
+    .projects-title {
+        font-size: 1rem;
+        margin: auto;
+        margin: auto;
+        margin-bottom: 1rem;
+        width: auto;
+    }
+    .projects-desc {
+        font-size: 0.7rem;
+        margin: auto;
+        width: auto;
+    }
+    .projects-img {
+        width: 15rem;
+        height: 11.5rem;
+        object-fit: cover;
+    }
+    .projects-info {
+        padding: 0.7rem;
+        height: 110px;
+    }
+    .projects-container {
+        display: flex;
+        flex-direction: row;
+        height: 90%;
+        justify-content: center;
+        margin-bottom: 10rem !important;
+    }
+    .projects {
+        margin-bottom: 0rem;
+        margin-right: 5rem;
+    }
+    .projects:nth-child(3) {
+        margin-right: 0;
+    }
+    .more {
+        display: none;
+        background-color: #C4C4C4;
+    }
+}

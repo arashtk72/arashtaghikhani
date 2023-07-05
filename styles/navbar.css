@@ -1,0 +1,173 @@
+nav {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    justify-content: space-between;
+    padding: 0 1.5rem;
+    z-index: 200;
+}
+#menu-container {
+    z-index: 200;
+}
+#nav-logo {
+    margin-top: 3rem;
+    z-index: 1000;
+    object-fit: contain;
+}
+#navbar-menu-button {
+    display: block;
+    height: 20px;
+    width: 25px;
+    background-color: transparent;
+    position: relative;
+}
+#navbar-menu-button span {
+    height: 2px;
+    width: 25px;
+    display: block;
+    border-radius: 2px;
+    background-color: #fff;
+    position: absolute;
+    transition: 200ms;
+}
+#navbar-menu-button span:first-child {
+    top: 0%;
+    left: 0%;
+}
+#navbar-menu-button span:nth-child(2) {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#navbar-menu-button span:nth-child(3) {
+    bottom: 0%;
+    left: 0%;
+}
+#menu-container {
+    background-color: #fff;
+    border-radius: 0 1.5rem 1.5rem 0;
+    display: inline-block;
+    position: fixed;
+    left: -100%;
+    top: 60px;
+    backdrop-filter: blur(4px);
+    transition: left 200ms;
+}
+#menu-list-container a {
+    color: #151515;
+    padding: 1rem;
+    padding-left: 3rem;
+    padding-right: 2rem;
+    display: block;
+    text-align: center;
+    font-size: 1.5rem;
+}
+#menu-list-container ul:first-child li:first-child a {
+    padding-top: 2rem;
+    border-top-right-radius: 1.5rem;
+}
+#menu-list-container ul:last-child li:last-child a {
+    padding-bottom: 2rem;
+    border-bottom-right-radius: 1.5rem;
+}
+#menu-list-container a:hover {
+    background: #15ffab;
+    color: #252525;
+}
+.menu-button-active span:first-child {
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    transition: transform 200ms;
+}
+.menu-button-active span:nth-child(2) {
+    top: 50%;
+    left: 0%;
+    transform: translatey(-50%);
+    opacity: 0;
+}
+.menu-button-active span:nth-child(3) {
+    top: 50% !important;
+    left: 50% !important;
+    transition: transform 200ms;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+#arashLogo {
+    height: 3.5rem;
+    margin-top: 1rem;
+    
+}
+
+@media only screen and (min-width: 720px) {
+    #navbar-menu-button {
+        display: none;
+    }
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 120px;
+        justify-content: space-between;
+        padding: 0 1.5rem;
+        position: relative;
+        padding-top: 2rem;
+    }
+    #nav-logo {
+        margin-top: 0;
+        position: absolute;
+        transform: translate(-50%, -50%) scale(1.3);
+        top: 60%;
+        left: 50%;
+        width: auto;
+        height: auto;
+    }
+    #menu-container {
+        background-color: transparent;
+        display: flex;
+        position: static;
+        backdrop-filter: none;
+        transition: left 200ms;
+        width: 70%;
+        height: 30px;
+        margin: 0 auto;
+    }
+    #menu-list-container {
+        display: flex;
+        justify-content: space-between;
+        color: #fff;
+        width: 100%;
+    }
+    #menu-list-container ul {
+        display: flex;
+    }
+    #menu-list-container ul li a {
+        color: #fff;
+        font-size: 20px;
+        font-weight: 200;
+        padding: 0 !important;
+        text-transform: uppercase;
+    }
+    #menu-list-container li:first-child {
+        margin-right: 3rem;
+    }
+    #menu-list-container li:last-child {
+        margin-left: 3rem;
+    }
+    #menu-list-container li:nth-child(2) {
+        margin-right: auto;
+    }
+
+    #menu-list-container a {
+        color: #15ffab;
+        background-color: transparent;
+        position: relative;
+        display: block;
+        transition: border 200ms;
+    }
+    #menu-list-container a:hover {
+        background-color: transparent;
+        color: #fff;
+        border-bottom: 5px solid #15ffab;
+        border-radius: 0 !important;
+    }
+}

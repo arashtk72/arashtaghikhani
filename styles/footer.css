@@ -1,0 +1,23 @@
+footer {
+    font-size: 8px;
+    text-align: center;
+    margin: 0 auto;
+    color: #979797;
+    padding-bottom: 0.5rem;
+    margin-top: auto;
+    /* position: fixed; */
+    /* transform: translate(-50%); */
+    /* bottom: 0px; */
+    /* left: 50%; */
+}
+footer div {
+    margin-bottom: 1rem;
+}
+@media only screen and (min-width: 720px) {
+    footer {
+        font-size: 10px;
+    }
+    footer div {
+        margin-bottom: 2rem;
+    }
+}

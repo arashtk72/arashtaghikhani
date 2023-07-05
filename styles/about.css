@@ -1,0 +1,33 @@
+#about-description {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    padding: 0 1.5rem;
+    color: #eeeeee;
+}
+
+@media only screen and (min-width: 720px) {
+    #about-container {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+    #about-description {
+        margin-top: 1rem;
+        font-size: 2.2rem;
+        font-weight: 100;
+        padding: 0;
+        padding-right: 3rem;
+    }
+    #bio-image-container {
+        min-width: 450px;
+    }
+    #about-description span:first-child {
+        font-size: 3.5rem;
+    }
+    main div {
+        display: flex;
+        align-items: center;
+        height: 100%;
+    }
+}
